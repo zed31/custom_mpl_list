@@ -3,6 +3,7 @@
 #include "../include/mpl_change.hpp"
 #include "../include/mpl_list.hpp"
 #include "../include/mpl_size.hpp"
+#include "../include/mpl_push_front.hpp"
 
 int main() {
 	static_assert( 
@@ -17,5 +18,11 @@ int main() {
 	);
 	static_assert(
 		mpl_custom::size<std::tuple<int, float, char, void>>::value == 4, ""
+	);
+	static_assert(
+		std::is_same<
+			mpl_custom::push_front<std::tuple<int, float>, char>,
+			std::tuple<char, int,float>
+		>::value, "Error, std::tuple<char, int, float> expected"
 	);
 }

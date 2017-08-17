@@ -18,6 +18,9 @@
     <ClInclude Include="include\mpl_size.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\mpl_push_front.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\mpl.cpp">
