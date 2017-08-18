@@ -1,5 +1,6 @@
 #include <type_traits>
 #include <tuple>
+#include <iostream>
 #include "mpl_change.hpp"
 #include "mpl_list.hpp"
 #include "mpl_size.hpp"
@@ -8,6 +9,7 @@
 #include "mpl_meta_function.hpp"
 #include "mpl_apply.hpp"
 #include "mpl_meta_function.hpp"
+#include "mpl_contains.hpp"
 
 template<class T1, class T2>
 inline void assert_same_type(T1, T2) { 
@@ -33,5 +35,11 @@ int main() {
 	assert_same_type(
 		mpl_custom::apply<std::tuple<char, int, float>, mpl_custom::add_pointer>{},
 		std::tuple<char *, int *, float *>{}
+	);
+	static_assert(
+		mpl_custom::contains<std::tuple<char, int, float>, float>::value, ""
+	);
+	static_assert(
+		mpl_custom::contains<std::tuple<int, char, float, double, unsigned int, long>, float>:: value, ""
 	);
 }
