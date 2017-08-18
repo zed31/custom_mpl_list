@@ -6,6 +6,8 @@
 #include "mpl_push_front.hpp"
 #include "mpl_push_back.hpp"
 #include "mpl_meta_function.hpp"
+#include "mpl_apply.hpp"
+#include "mpl_meta_function.hpp"
 
 template<class T1, class T2>
 inline void assert_same_type(T1, T2) { 
@@ -27,5 +29,9 @@ int main() {
 	assert_same_type(
 		std::tuple<char, int, float>{}, 
 		mpl_custom::push_front<std::tuple<int, float>, char>{}
+	);
+	assert_same_type(
+		mpl_custom::apply<std::tuple<char, int, float>, mpl_custom::add_pointer>{},
+		std::tuple<char *, int *, float *>{}
 	);
 }

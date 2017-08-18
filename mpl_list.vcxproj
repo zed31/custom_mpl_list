@@ -92,6 +92,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\mpl_apply.hpp" />
     <ClInclude Include="include\mpl_change.hpp" />
     <ClInclude Include="include\mpl_list.hpp" />
     <ClInclude Include="include\mpl_meta_function.hpp" />

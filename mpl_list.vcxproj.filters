@@ -9,6 +9,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\mpl_apply.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
     <ClInclude Include="include\mpl_change.hpp">
       <Filter>include</Filter>
     </ClInclude>
