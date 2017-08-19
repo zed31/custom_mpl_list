@@ -12,6 +12,7 @@
 #include "mpl_size.hpp"
 #include "mpl_erase_all.hpp"
 #include "mpl_reverse.hpp"
+#include "mpl_no_duplicates.hpp"
 
 namespace mpl_custom {
 	template<class container, unsigned pos>
@@ -43,4 +44,7 @@ namespace mpl_custom {
 
 	template<class container>
 	using reverse = typename reverse_impl<container>::type;
+
+	template<class container>
+	using no_duplicates = typename no_duplicates_impl<container>::type;
 }
