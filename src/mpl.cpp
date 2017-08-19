@@ -56,7 +56,7 @@ int main() {
 		mpl_custom::reverse<std::tuple<float, char, int>>{}
 	);
 	assert_same_type(
-		std::tuple<int, float>{},
-		mpl_custom::no_duplicates<std::tuple<int, float, int, float>>{}
+		mpl_custom::list<int, float>{},
+		mpl_custom::no_duplicates<mpl_custom::list<int, float, int, float>>{}
 	);
 }
