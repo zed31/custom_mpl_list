@@ -45,6 +45,9 @@
     <ClInclude Include="include\mpl_erase_all.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\mpl_reverse.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\mpl.cpp">

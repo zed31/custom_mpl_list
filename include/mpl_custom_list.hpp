@@ -11,6 +11,7 @@
 #include "mpl_push_front.hpp"
 #include "mpl_size.hpp"
 #include "mpl_erase_all.hpp"
+#include "mpl_reverse.hpp"
 
 namespace mpl_custom {
 	template<class container, unsigned pos>
@@ -39,4 +40,7 @@ namespace mpl_custom {
 
 	template<class container, class typeErase>
 	using erase_all = typename erase_all_impl<container, typeErase>::type;
+
+	template<class container>
+	using reverse = typename reverse_impl<container>::type;
 }

@@ -103,6 +103,7 @@
     <ClInclude Include="include\mpl_meta_function.hpp" />
     <ClInclude Include="include\mpl_push_back.hpp" />
     <ClInclude Include="include\mpl_push_front.hpp" />
+    <ClInclude Include="include\mpl_reverse.hpp" />
     <ClInclude Include="include\mpl_size.hpp" />
   </ItemGroup>
   <ItemGroup>

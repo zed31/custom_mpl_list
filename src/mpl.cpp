@@ -51,4 +51,8 @@ int main() {
 		std::tuple<char, char, char, float>{},
 		mpl_custom::erase_all<std::tuple<int, char, char, char, float>, int>{}
 	);
+	assert_same_type(
+		std::tuple<int, char, float>{},
+		mpl_custom::reverse<std::tuple<float, char, int>>{}
+	);
 }
