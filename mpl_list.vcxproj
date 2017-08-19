@@ -93,8 +93,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\mpl_apply.hpp" />
+    <ClInclude Include="include\mpl_at.hpp" />
     <ClInclude Include="include\mpl_change.hpp" />
     <ClInclude Include="include\mpl_contains.hpp" />
+    <ClInclude Include="include\mpl_count.h" />
     <ClInclude Include="include\mpl_list.hpp" />
     <ClInclude Include="include\mpl_meta_function.hpp" />
     <ClInclude Include="include\mpl_push_back.hpp" />

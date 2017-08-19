@@ -33,6 +33,12 @@
     <ClInclude Include="include\mpl_contains.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\mpl_at.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpl_count.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\mpl.cpp">

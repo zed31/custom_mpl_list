@@ -1,7 +1,5 @@
 #pragma once
 
-#include <type_traits>
-
 namespace mpl_custom {
 	template<class container, class compareType>
 	struct contains_impl;

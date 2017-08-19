@@ -10,6 +10,7 @@
 #include "mpl_apply.hpp"
 #include "mpl_meta_function.hpp"
 #include "mpl_contains.hpp"
+#include "mpl_at.hpp"
 
 template<class T1, class T2>
 inline void assert_same_type(T1, T2) { 
@@ -40,6 +41,12 @@ int main() {
 		mpl_custom::contains<std::tuple<char, int, float>, float>::value, ""
 	);
 	static_assert(
-		mpl_custom::contains<std::tuple<int, char, float, double, unsigned int, long>, float>:: value, ""
+		mpl_custom::contains<std::tuple<int, char, float, double, unsigned int, long>, float>::value, ""
+	);
+	static_assert(
+		std::is_same <
+			mpl_custom::at<std::tuple<int, char, float>, 1>,
+			char
+		>::value, ""
 	);
 }
