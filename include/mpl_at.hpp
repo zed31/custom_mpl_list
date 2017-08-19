@@ -1,7 +1,7 @@
 #pragma once
 
 namespace mpl_custom {
-	template<class container, int pos>
+	template<class container, unsigned pos>
 	struct at_impl;
 
 	template<template<class...> class container, class T1, class... T>
@@ -9,11 +9,8 @@ namespace mpl_custom {
 		using type = T1;
 	};
 
-	template<template<class...> class container, class T1, class... T, int pos>
+	template<template<class...> class container, class T1, class... T, unsigned pos>
 	struct at_impl<container<T1, T...>, pos> {
 		using type = typename at_impl<container<T...>, pos - 1>::type;
 	};
-
-	template<class container, int pos>
-	using at = typename at_impl<container, pos>::type;
 }

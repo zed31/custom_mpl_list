@@ -10,7 +10,4 @@ namespace mpl_custom {
 	struct size_impl<containerSrc<T...>> {
 		static constexpr std::size_t value = sizeof...(T);
 	};
-
-	template<class containerSrc>
-	using size = typename size_impl<containerSrc>;
 }

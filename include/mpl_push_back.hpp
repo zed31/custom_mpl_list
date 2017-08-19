@@ -8,7 +8,4 @@ namespace mpl_custom {
 	struct push_back_impl<container<T...>, insert> {
 		using type = container<T..., insert>;
 	};
-
-	template<class container, class insert>
-	using push_back = typename push_back_impl<container, insert>::type;
 }

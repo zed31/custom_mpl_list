@@ -8,7 +8,4 @@ namespace mpl_custom {
 	struct change_impl<containerSrc<T...>, containerDest> {
 		using type = containerDest<T...>;
 	};
-
-	template<class containerSrc, template<class...> class containerDest>
-	using change = typename change_impl<containerSrc, containerDest>::type;
 }

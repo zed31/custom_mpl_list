@@ -36,7 +36,13 @@
     <ClInclude Include="include\mpl_at.hpp">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\mpl_count.h">
+    <ClInclude Include="include\mpl_count.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpl_custom_list.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpl_erase_all.hpp">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
