@@ -1,16 +1,8 @@
-#include <type_traits>
-#include <tuple>
-#include <iostream>
-#include "mpl_custom_list.hpp"
 #include "proto_test.hh"
 
 int main() {
 	/* static_assert(
 		mpl_custom::size<std::tuple<int, float, char, void>>::value == 4, ""
-	);
-	assert_same_type(
-		mpl_custom::list<int, float, double>{}, 
-		mpl_custom::push_back<mpl_custom::list<int, float>, double>{}
 	);
 	assert_same_type(
 		mpl_custom::list<int, char, float>{}, 
@@ -55,4 +47,6 @@ int main() {
 		mpl_custom::list<int, float>{},
 		mpl_custom::no_duplicates<mpl_custom::list<int, float, int, float>>{}
 	); */
+	mpl_test::test_mpl_change();
+	mpl_test::test_mpl_push_back();
 }

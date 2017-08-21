@@ -1,7 +1,7 @@
 #pragma once
 
 namespace mpl_custom{
-	template<typename container, class T>
+	template<typename container, class... T>
 	struct push_back_impl;
 }
 

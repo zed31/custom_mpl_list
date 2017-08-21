@@ -5,4 +5,5 @@ namespace mpl_test {
 	}
 
 	void test_mpl_change();
+	void test_mpl_push_back();
 }
