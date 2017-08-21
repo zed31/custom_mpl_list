@@ -19,4 +19,7 @@ namespace mpl_custom {
 	struct contains_impl<container<T1, T...>, compareType> {
 		static constexpr bool value = contains_impl<container<T...>, compareType>::value;
 	};
+
+	template<class container, class compareType>
+	using contains = typename contains_impl<container, compareType>;
 }

@@ -13,4 +13,7 @@ namespace mpl_custom {
 	struct at_impl<container<T1, T...>, pos> {
 		using type = typename at_impl<container<T...>, pos - 1>::type;
 	};
+
+	template<class container, unsigned pos>
+	using at = typename at_impl<container, pos>::type;
 }

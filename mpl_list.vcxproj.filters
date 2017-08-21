@@ -1,39 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="include">
       <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\proto_test">
+      <UniqueIdentifier>{4B436B9B-3727-2CF1-A087-26448C8A1673}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{78756B10-E489-93C1-AD0B-372119DF8FF2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\mpl_apply.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\mpl_at.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
     <ClInclude Include="include\mpl_change.hpp">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\mpl_list.hpp">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mpl_meta_function.hpp">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mpl_push_back.hpp">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mpl_push_front.hpp">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mpl_size.hpp">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="include\mpl_contains.hpp">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mpl_at.hpp">
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\mpl_count.hpp">
@@ -45,16 +36,37 @@
     <ClInclude Include="include\mpl_erase_all.hpp">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\mpl_reverse.hpp">
+    <ClInclude Include="include\mpl_list.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpl_meta_function.hpp">
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\mpl_no_duplicates.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\mpl_push_back.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpl_push_front.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpl_reverse.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpl_size.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\proto_test\proto_test.hh">
+      <Filter>include\proto_test</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\mpl.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\mpl_change.cpp">
+      <Filter>tests</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

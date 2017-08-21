@@ -18,4 +18,7 @@ namespace mpl_custom {
 	struct count_impl<container<T1, T...>, typeOccur> {
 		static constexpr std::size_t value = 0 + count_impl<container<T...>, typeOccur>::value;
 	};
+
+	template<class container, class typeOccur>
+	using count = count_impl<container, typeOccur>;
 }

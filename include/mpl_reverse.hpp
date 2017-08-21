@@ -20,4 +20,7 @@ namespace mpl_custom {
 	struct reverse_impl<container<T1, T...>> {
 		using type = typename push_back_impl<container<T...>, T1>::type;
 	};
+
+	template<class container>
+	using reverse = typename reverse_impl<container>::type;
 }

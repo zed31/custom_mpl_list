@@ -26,4 +26,7 @@ namespace mpl_custom {
 		using rest = typename erase_all_impl<container<T...>, typeErase>::type;
 		using type = typename push_front_impl<rest, T1>::type;
 	};
+
+	template<class container, class typeErase>
+	using erase_all = typename erase_all_impl<container, typeErase>::type;
 }

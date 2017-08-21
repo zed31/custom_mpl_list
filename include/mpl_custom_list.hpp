@@ -13,38 +13,3 @@
 #include "mpl_erase_all.hpp"
 #include "mpl_reverse.hpp"
 #include "mpl_no_duplicates.hpp"
-
-namespace mpl_custom {
-	template<class container, unsigned pos>
-	using at = typename at_impl<container, pos>::type;
-
-	template<class container, class compareType>
-	using contains = typename contains_impl<container, compareType>;
-
-	template<class container, template<class...> class metaFunction>
-	using apply = typename apply_impl<container, metaFunction>::type;
-
-	template<class containerSrc, template<class...> class containerDest>
-	using change = typename change_impl<containerSrc, containerDest>::type;
-
-	template<class container, class typeOccur>
-	using count = typename count_impl<container, typeOccur>;
-
-	template<class container, class insert>
-	using push_back = typename push_back_impl<container, insert>::type;
-
-	template<class container, class... T>
-	using push_front = typename push_front_impl<container, T...>::type;
-
-	template<class containerSrc>
-	using size = typename size_impl<containerSrc>;
-
-	template<class container, class typeErase>
-	using erase_all = typename erase_all_impl<container, typeErase>::type;
-
-	template<class container>
-	using reverse = typename reverse_impl<container>::type;
-
-	template<class container>
-	using no_duplicates = typename no_duplicates_impl<container>::type;
-}

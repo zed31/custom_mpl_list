@@ -8,4 +8,7 @@ namespace mpl_custom {
 	struct apply_impl<container<T...>, metaFunction> {
 		using type = container<metaFunction<T>...>;
 	};
+
+	template<class container, template<class...> class metaFunction>
+	using apply = typename apply_impl<container, metaFunction>::type;
 }

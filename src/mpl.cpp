@@ -2,14 +2,10 @@
 #include <tuple>
 #include <iostream>
 #include "mpl_custom_list.hpp"
-
-template<class T1, class T2>
-inline void assert_same_type(T1, T2) { 
-	T1{} = T2{}; 
-}
+#include "proto_test.hh"
 
 int main() {
-	static_assert(
+	/* static_assert(
 		mpl_custom::size<std::tuple<int, float, char, void>>::value == 4, ""
 	);
 	assert_same_type(
@@ -58,5 +54,5 @@ int main() {
 	assert_same_type(
 		mpl_custom::list<int, float>{},
 		mpl_custom::no_duplicates<mpl_custom::list<int, float, int, float>>{}
-	);
+	); */
 }

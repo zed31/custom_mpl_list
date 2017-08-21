@@ -26,4 +26,8 @@ namespace mpl_custom {
 		using rest = typename no_duplicates_impl<containerCleaned>::type;
 		using type = typename push_front_impl<rest, T1>::type;
 	};
+
+	template<class container>
+	using no_duplicates = typename no_duplicates_impl<container>::type;
+
 }

@@ -7,8 +7,8 @@ project "mpl_list"
    language "C++"
    targetdir "bin/%{cfg.buildcfg}"
 
-   files { "./include/**.h", "./src/**.cpp", "./include/**.hh", "./include/**.hpp" }
-   includedirs {"./include"}
+   files { "./include/**.h", "./src/**.cpp", "./include/**.hh", "./include/**.hpp", "./tests/**.cpp" }
+   includedirs {"./include", "./include/proto_test"}
    flags { "FatalWarnings", "C++14" }
 
    filter "configurations:Debug"
