@@ -83,5 +83,8 @@
     <ClCompile Include="tests\mpl_contains.cpp">
       <Filter>tests</Filter>
     </ClCompile>
+    <ClCompile Include="tests\mpl_at.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
