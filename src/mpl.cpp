@@ -1,27 +1,7 @@
 #include "proto_test.hh"
 
 int main() {
-	/* static_assert(
-		mpl_custom::size<std::tuple<int, float, char, void>>::value == 4, ""
-	);
-	assert_same_type(
-		mpl_custom::list<int, char, float>{}, 
-		mpl_custom::change<std::tuple<int, char, float>, mpl_custom::list>{}
-	);
-	assert_same_type(
-		std::tuple<char, int, float, int, float>{}, 
-		mpl_custom::push_front<std::tuple<int, float>, char, int, float>{}
-	);
-	assert_same_type(
-		mpl_custom::apply<std::tuple<char, int, float>, mpl_custom::add_pointer>{},
-		std::tuple<char *, int *, float *>{}
-	);
-	static_assert(
-		mpl_custom::contains<std::tuple<char, int, float>, float>::value, ""
-	);
-	static_assert(
-		mpl_custom::contains<std::tuple<int, char, float, double, unsigned int, long>, float>::value, ""
-	);
+	/*
 	static_assert(
 		std::is_same <
 			mpl_custom::at<std::tuple<int, char, float>, 1>,
@@ -49,4 +29,8 @@ int main() {
 	); */
 	mpl_test::test_mpl_change();
 	mpl_test::test_mpl_push_back();
+	mpl_test::mpl_size();
+	mpl_test::mpl_push_front();
+	mpl_test::mpl_transform();
+	mpl_test::mpl_contains();
 }

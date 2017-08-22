@@ -92,7 +92,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\mpl_apply.hpp" />
+    <ClInclude Include="include\mpl_transform.hpp" />
     <ClInclude Include="include\mpl_at.hpp" />
     <ClInclude Include="include\mpl_change.hpp" />
     <ClInclude Include="include\mpl_contains.hpp" />
@@ -110,8 +110,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\mpl.cpp" />
+    <ClCompile Include="tests\mpl_contains.cpp" />
+    <ClCompile Include="tests\mpl_transform.cpp" />
     <ClCompile Include="tests\mpl_change.cpp" />
     <ClCompile Include="tests\mpl_push_back.cpp" />
+    <ClCompile Include="tests\mpl_push_front.cpp" />
+    <ClCompile Include="tests\mpl_size.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

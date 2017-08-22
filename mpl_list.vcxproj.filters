@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\mpl_apply.hpp">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="include\mpl_at.hpp">
       <Filter>include</Filter>
     </ClInclude>
@@ -60,6 +57,9 @@
     <ClInclude Include="include\proto_test\proto_test.hh">
       <Filter>include\proto_test</Filter>
     </ClInclude>
+    <ClInclude Include="include\mpl_transform.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\mpl.cpp">
@@ -69,6 +69,18 @@
       <Filter>tests</Filter>
     </ClCompile>
     <ClCompile Include="tests\mpl_push_back.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\mpl_size.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\mpl_push_front.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\mpl_transform.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\mpl_contains.cpp">
       <Filter>tests</Filter>
     </ClCompile>
   </ItemGroup>
