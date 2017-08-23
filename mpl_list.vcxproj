@@ -112,6 +112,7 @@
     <ClCompile Include="src\mpl.cpp" />
     <ClCompile Include="tests\mpl_at.cpp" />
     <ClCompile Include="tests\mpl_contains.cpp" />
+    <ClCompile Include="tests\mpl_count.cpp" />
     <ClCompile Include="tests\mpl_transform.cpp" />
     <ClCompile Include="tests\mpl_change.cpp" />
     <ClCompile Include="tests\mpl_push_back.cpp" />

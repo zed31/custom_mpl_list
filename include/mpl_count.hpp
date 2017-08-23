@@ -1,24 +1,10 @@
 #pragma once
 
+#include <type_traits>
+#include "mpl_size.hpp"
+#include "mpl_erase_all.hpp"
+
 namespace mpl_custom {
 	template<class container, class typeOccur>
-	struct count_impl;
-
-	template<template<class...> class container, class typeOccur>
-	struct count_impl<container<>, typeOccur> {
-		static constexpr std::size_t value = 0;
-	};
-
-	template<template<class...> class container, class... T, class typeOccur>
-	struct count_impl<container<typeOccur, T...>, typeOccur> {
-		static constexpr std::size_t value = 1 + count_impl<container<T...>, typeOccur>::value;
-	};
-
-	template<template<class...> class container, class T1, class... T, class typeOccur>
-	struct count_impl<container<T1, T...>, typeOccur> {
-		static constexpr std::size_t value = 0 + count_impl<container<T...>, typeOccur>::value;
-	};
-
-	template<class container, class typeOccur>
-	using count = count_impl<container, typeOccur>;
+	using count = typename std::integral_constant<std::size_t, size<container>::value - size<erase_all<container, typeOccur>>::value>::type;
 }

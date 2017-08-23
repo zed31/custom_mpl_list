@@ -3,12 +3,6 @@
 int main() {
 	/*
 	static_assert(
-		std::is_same <
-			mpl_custom::at<std::tuple<int, char, float>, 1>,
-			char
-		>::value, ""
-	);
-	static_assert(
 		mpl_custom::count<std::tuple<int, int>, int>::value == 2, ""
 	);
 	assert_same_type(
@@ -33,4 +27,6 @@ int main() {
 	mpl_test::mpl_push_front();
 	mpl_test::mpl_transform();
 	mpl_test::mpl_contains();
+	mpl_test::mpl_at_c();
+	mpl_test::mpl_count();
 }

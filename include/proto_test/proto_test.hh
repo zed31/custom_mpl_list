@@ -12,4 +12,6 @@ namespace mpl_test {
 	void mpl_push_front();
 	void mpl_transform();
 	void mpl_contains();
+	void mpl_at_c();
+	void mpl_count();
 }
