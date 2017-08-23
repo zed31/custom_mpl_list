@@ -11,5 +11,10 @@ namespace mpl_test {
 			mpl_custom::reverse<mpl_custom::list<void *, double, float, float, char>>{},
 			mpl_custom::list<char, float, float, double, void*>{}
 		);
+		assert_same_type(
+			mpl_custom::reverse<std::tuple<char, float, char>>{},
+			std::tuple<char, float, char>{}
+		);
+
 	}
 }
