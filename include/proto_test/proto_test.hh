@@ -14,4 +14,6 @@ namespace mpl_test {
 	void mpl_contains();
 	void mpl_at_c();
 	void mpl_count();
+	void mpl_erase_all();
+	void mpl_reverse();
 }

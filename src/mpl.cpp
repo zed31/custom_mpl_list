@@ -1,26 +1,6 @@
 #include "proto_test.hh"
 
 int main() {
-	/*
-	static_assert(
-		mpl_custom::count<std::tuple<int, int>, int>::value == 2, ""
-	);
-	assert_same_type(
-		std::tuple<int, float>{},
-		mpl_custom::erase_all<std::tuple<int, char, char, char, float>, char>{}
-	);
-	assert_same_type(
-		std::tuple<char, char, char, float>{},
-		mpl_custom::erase_all<std::tuple<int, char, char, char, float>, int>{}
-	);
-	assert_same_type(
-		std::tuple<int, char, float>{},
-		mpl_custom::reverse<std::tuple<float, char, int>>{}
-	);
-	assert_same_type(
-		mpl_custom::list<int, float>{},
-		mpl_custom::no_duplicates<mpl_custom::list<int, float, int, float>>{}
-	); */
 	mpl_test::test_mpl_change();
 	mpl_test::test_mpl_push_back();
 	mpl_test::mpl_size();
@@ -29,4 +9,6 @@ int main() {
 	mpl_test::mpl_contains();
 	mpl_test::mpl_at_c();
 	mpl_test::mpl_count();
+	mpl_test::mpl_erase_all();
+	mpl_test::mpl_reverse();
 }

@@ -89,5 +89,11 @@
     <ClCompile Include="tests\mpl_count.cpp">
       <Filter>tests</Filter>
     </ClCompile>
+    <ClCompile Include="tests\mpl_erase_all.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\mpl_reverse.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

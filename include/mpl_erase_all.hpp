@@ -1,10 +1,4 @@
 #pragma once
-
-namespace mpl_custom {
-	template<class container, class... T>
-	struct push_front_impl;
-}
-
 #include "mpl_push_front.hpp"
 
 namespace mpl_custom {
